@@ -55,6 +55,18 @@
   .ob .s .v{font-family:var(--display);font-weight:800;font-size:19px;color:var(--yellow-600);margin-right:7px;}
   .ob p{font-size:13.5px;color:var(--gray-600);margin:0 0 7px;line-height:1.42;}
   .ob .src{font-style:italic;font-size:11.5px;color:var(--gray-400);}
+  /* ALT magazine observation layout */
+  .altnote{display:inline-block;background:#fff3a8;border:2px solid var(--ink);border-radius:8px;font-size:11px;font-weight:700;padding:5px 11px;margin-bottom:18px;text-transform:uppercase;letter-spacing:.06em;}
+  .mag{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:24px 0;border-top:1px solid var(--gray-200);}
+  .mag:first-of-type{border-top:none;}
+  .mag .visual{min-height:190px;border:1.5px dashed #c2c6cd;border-radius:14px;background:var(--gray-50);display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:12px;font-weight:500;text-align:center;padding:14px;}
+  .mag .txt .chip{display:inline-flex;align-items:baseline;gap:7px;background:var(--gray-50);border-left:4px solid var(--yellow);padding:6px 12px;border-radius:6px;margin-bottom:10px;font-size:12px;color:var(--gray-500);font-weight:600;}
+  .mag .txt .chip .v{font-family:var(--display);font-weight:800;font-size:20px;color:var(--yellow-600);}
+  .mag .txt h3{font-size:21px;margin:0 0 8px;line-height:1.15;}
+  .mag .txt p{font-size:14.5px;color:var(--gray-600);line-height:1.5;margin:0 0 8px;}
+  .mag .txt .src{font-style:italic;font-size:11.5px;color:var(--gray-400);}
+  .mag.flip .visual{order:2;}
+  @media(max-width:680px){.mag{grid-template-columns:1fr;}.mag.flip .visual{order:0;}}
   /* MYTH TABLE */
   .mtable{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow);overflow:hidden;}
   .mtable .thead,.mtable .trow{display:grid;grid-template-columns:1fr 0.85fr 1.25fr;}
@@ -177,6 +189,52 @@
     <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03</span></div>
   </section>
 
+  <!-- ALT LAYOUT A (magazine, observations 1-4) — kept for reference -->
+  <section class="page">
+    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context · alternative layout</span><h2>Fashion market observations</h2></div></div>
+    <span class="altnote">Magazine layout (option B) · kept for reference</span>
+    <div class="mag">
+      <div class="visual">[ Visual: shopper comparing prices / a sale rack ]</div>
+      <div class="txt"><div class="chip"><span class="v">64%</span> chose a cheaper option</div><h3>Shoppers are choosing cheaper options</h3><p>Clothes are an easy thing to cut back on, so when money is tight they are one of the first to go. Price now matters more than brand habit, so loyalty has to give people a real reason to stay.</p><span class="src">McKinsey × BoF, State of Fashion</span></div>
+    </div>
+    <div class="mag flip">
+      <div class="visual">[ Visual: a dupe next to the original ]</div>
+      <div class="txt"><div class="chip"><span class="v">67%</span> buy dupes to save money</div><h3>Dupe culture has gone mainstream</h3><p>More and more shoppers see a near-identical product at a much lower price not as settling, but as a smart win. The brand name, and sometimes even the quality, matter less than the price.</p><span class="src">Morning Consult, 2025</span></div>
+    </div>
+    <div class="mag">
+      <div class="visual">[ Visual: Gen Z shopper browsing many brands ]</div>
+      <div class="txt"><div class="chip"><span class="v">29%</span> of Gen Z's wardrobe is one brand</div><h3>Loyalty fades fastest among the young</h3><p>Young shoppers are the future of fashion, but they are the least loyal to any single brand. Your name alone will not win them. You have to keep giving them reasons to come back.</p><span class="src">McKinsey × BoF, State of Fashion</span></div>
+    </div>
+    <div class="mag flip">
+      <div class="visual">[ Visual: a sustainability label or proof point ]</div>
+      <div class="txt"><div class="chip"><span class="v">57%</span> distrust most "green" claims</div><h3>Values matter, but skepticism is high</h3><p>Shoppers increasingly pick brands that share their values, but they have learned to doubt marketing claims. So show proof, do not just make claims.</p><span class="src">Deloitte, The Sustainable Consumer</span></div>
+    </div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03 · alt</span></div>
+  </section>
+
+  <!-- ALT LAYOUT B (magazine, observations 5-8) — kept for reference -->
+  <section class="page">
+    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context · alternative layout</span><h2>Fashion market observations</h2></div></div>
+    <span class="altnote">Magazine layout (option B) · continued</span>
+    <div class="mag">
+      <div class="visual">[ Visual: real-customer content / phone with reviews ]</div>
+      <div class="txt"><div class="chip"><span class="v">2.4×</span> more authentic: real-customer vs brand content</div><h3>Traditional marketing is losing its grip</h3><p>Polished influencer campaigns work less well than they used to. What moves people now is real customers, communities, and word of mouth.</p><span class="src">SoPost; Edelman Trust Barometer</span></div>
+    </div>
+    <div class="mag flip">
+      <div class="visual">[ Visual: a resale / secondhand rail ]</div>
+      <div class="txt"><div class="chip"><span class="v">$393B</span> global secondhand apparel market</div><h3>Resale is reshaping the category</h3><p>Every resale purchase is a sale the brand missed, but it is also a sign that people value brands worth buying and reselling. Loyalty now competes with resale, and smart brands work with it rather than against it.</p><span class="src">ThredUp / GlobalData Resale Report</span></div>
+    </div>
+    <div class="mag">
+      <div class="visual">[ Visual: a pile of returns / parcels ]</div>
+      <div class="txt"><div class="chip"><span class="v">20–40%</span> apparel return rate</div><h3>Returns quietly eat fashion's profits</h3><p>Every return costs shipping, restocking, and often a lost sale. In fashion, a valuable customer is not just one who spends, but one who keeps what they buy. So loyalty should reward profitable behavior, not order value alone.</p><span class="src">NRF, Retail Returns Landscape</span></div>
+    </div>
+    <div class="mag flip">
+      <div class="visual">[ Visual: personalized recommendations on screen ]</div>
+      <div class="txt"><div class="chip"><span class="v">71%</span> expect personalized experiences</div><h3>Shoppers now expect personalization</h3><p>Generic, one-size-fits-all marketing increasingly underperforms. Shoppers reward brands that recognize them and tailor the experience, which is exactly what a loyalty program's first-party data makes possible.</p><span class="src">McKinsey, Next in Personalization</span></div>
+    </div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03 · alt</span></div>
+  </section>
+
   <!-- WHERE LOYALTY GOES WRONG (+ reality check) -->
   <section class="page">
     <div class="sec-head"><div class="numtile">02</div><div><span class="eyebrow">Problem</span><h2>Where loyalty goes wrong</h2></div></div>
@@ -207,11 +265,11 @@
     <div class="pcard"><span class="on">03</span><div><h3>Lead with value and authenticity, then prove it</h3><p>Tie rewards to what shoppers actually care about, and back every claim with evidence rather than slogans.</p></div></div>
     <div class="pcard"><span class="on">04</span><div><h3>Build owned relationships, reduce reliance on borrowed reach</h3><p>Turn customers into your channel through referrals, community, and first-party data.</p></div></div>
     <div class="pcard"><span class="on">05</span><div><h3>Be channel-agnostic by design</h3><p>One identity, one balance, one experience across web, app, and store, whatever platform you run on.</p></div></div>
-    <div class="pcard"><span class="on">06</span><div><h3>Reward profitable loyalty, not just spend</h3><p>In a high-return category, recognize the customers who buy and keep. For example, a tier for high-spend, low-return shoppers turns retention into margin, not just revenue.</p></div></div>
+    <div class="pcard"><span class="on">06</span><div><h3>Reward profitable loyalty, not just spend</h3><p>In a high-return category, recognize the customers who buy and keep, not only those who spend.</p></div></div>
 
     <div class="callout usecase">
       <div class="ct"><span class="tag y">Fashion use case</span> Turn returns into a loyalty lever</div>
-      <p>High return rates drain margin, add operational complexity, and raise a brand's carbon footprint. If you capture each customer's return rate as loyalty data, you can (1) segment customers to see who returns at high rates, and (2) reward high-spend, low-return shoppers for their efficient, lower-waste buying. The same program now protects margin and supports sustainability goals, not just repeat revenue.</p>
+      <p>High return rates are one of the biggest drains on fashion margins, on top of the carbon footprint brands are trying to reduce. So make returns part of the loyalty story: reward the customers who keep what they buy, the high spenders with low return rates, not just the biggest spenders. You protect margin and support sustainability goals, not just repeat revenue.</p>
     </div>
     <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>05</span></div>
   </section>
