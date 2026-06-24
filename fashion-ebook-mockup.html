@@ -44,7 +44,8 @@
   .cover h1{font-size:74px;margin:26px 0 22px;color:#fff;}
   .cover h1 .accent{color:var(--yellow);display:block;}
   .cover .sub{font-size:20px;color:#c3c7d0;max-width:30ch;line-height:1.45;margin:0;}
-  .cover .cfoot{display:flex;justify-content:space-between;border-top:1px solid #2a2f3b;margin-top:64px;padding-top:18px;font-size:12.5px;font-weight:600;color:#8b909b;}
+  .cover .cfoot{display:flex;justify-content:space-between;border-top:1px solid #2a2f3b;margin-top:64px;padding-top:18px;font-size:12.5px;font-weight:600;color:#fff;}
+  .cover .cfoot .cfootlogo{height:14px;width:auto;vertical-align:middle;margin-left:4px;position:relative;top:-1px;}
 
   /* WHAT YOU'LL LEARN */
   .learn{display:flex;flex-direction:column;}
@@ -109,7 +110,8 @@
   .pcard .on{flex:none;font-family:var(--display);font-weight:800;font-size:34px;color:var(--yellow);min-width:48px;line-height:1;}
   .pcard h3{font-size:19px;margin:0 0 5px;}
   .pcard p{margin:0;font-size:15px;color:var(--gray-600);line-height:1.5;}
-  .callout{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow-sm);padding:18px 22px;margin:16px 0 0;}
+  .page:has(.callout){display:flex;flex-direction:column;}
+  .callout{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow-sm);padding:18px 22px;margin:auto 0 0;}
   .callout .ct{font-family:var(--display);font-weight:800;font-size:17px;margin:0 0 8px;display:flex;align-items:center;gap:10px;}
   .callout p{margin:0;font-size:14.5px;line-height:1.5;}
   .callout.usecase{background:#fffdf0;}
@@ -184,7 +186,7 @@
       <span class="pill">Loyalty in Fashion</span>
       <h1>From deal hunters, to <span class="accent">dedicated fans</span></h1>
       <p class="sub">How apparel brands turn one-time shoppers into repeat fans in an age of dupes, deal-hunting, and fading brand loyalty.</p>
-      <div class="cfoot"><span>An industry loyalty guide by Gameball</span><span>www.gameball.co</span></div>
+      <div class="cfoot"><span>An industry loyalty guide by <img class="cfootlogo" src="logo%20light.png" alt="Gameball"></span><span>www.gameball.co</span></div>
     </div>
   </section>
 
