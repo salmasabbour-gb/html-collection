@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>From deal hunters to dedicated fans — Fashion loyalty guide (mockup)</title>
+<title>From deal hunters to dedicated fans — Fashion loyalty guide (v2 magazine)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,17 +19,22 @@
   *{box-sizing:border-box;}
   body{margin:0;background:var(--gray-200);font-family:var(--body);color:var(--ink);}
   .doc{max-width:900px;margin:0 auto;padding:30px 14px 70px;}
-  .page{position:relative;background:var(--white);border-radius:18px;margin:0 0 22px;padding:60px 64px 78px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.10);min-height:560px;}
+  .page{position:relative;background:var(--white);border-radius:18px;margin:0 0 22px;padding:60px 64px 78px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.10);min-height:1233px;}
   h1,h2,h3,h4,.display{font-family:var(--display);font-weight:800;letter-spacing:-0.02em;line-height:1.05;}
   .eyebrow{font-family:var(--body);font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--orange);margin:0 0 12px;display:block;}
   .foot{position:absolute;left:64px;right:64px;bottom:30px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--gray-200);padding-top:14px;font-size:10px;font-weight:400;color:var(--gray-400);}
-  .foot .footlogo{height:13px;width:auto;vertical-align:middle;margin-left:4px;position:relative;top:-1px;}
-  .ph{border:1.5px dashed #c2c6cd;border-radius:var(--r-tile);background:var(--gray-50);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--gray-400);font-size:13px;font-weight:500;padding:18px;gap:8px;}
+  .foot .footlogo{height:13px;width:auto;vertical-align:middle;margin-left:3px;position:relative;top:-1px;}
   .sec-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:18px;}
   .numtile{flex:none;width:64px;height:64px;border-radius:16px;background:var(--yellow);border:2.5px solid var(--ink);box-shadow:var(--shadow-sm);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:26px;}
   .sec-head h2{font-size:36px;margin:2px 0 0;}
-  /* COVER */
-  .cover{padding:0;min-height:1180px;display:flex;flex-direction:column;}
+  h2.big{font-size:46px;margin:0 0 26px;}
+  .ph{border:1.5px dashed #c2c6cd;border-radius:var(--r-tile);background:var(--gray-50);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--gray-400);font-size:13px;font-weight:500;padding:18px;gap:8px;}
+  /* SECTION IMAGE OPENER */
+  .opener{height:140px;border:1.5px dashed #c2c6cd;border-radius:14px;background:var(--gray-50);display:flex;align-items:center;justify-content:center;gap:8px;color:var(--gray-400);font-size:12px;font-weight:500;margin:0 0 26px;}
+  .altnote{display:inline-block;background:#fff3a8;border:2px solid var(--ink);border-radius:8px;font-size:11px;font-weight:700;padding:5px 11px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.06em;}
+
+  /* COVER (original split) */
+  .cover{padding:0;display:flex;flex-direction:column;}
   .cover .top{flex:1;background:linear-gradient(160deg,#d7c2cf 0%,#c9b3c6 45%,#b9a7c2 100%);position:relative;display:flex;align-items:center;justify-content:center;}
   .cover .logo{position:absolute;top:34px;left:40px;}
   .cover .logo img{height:30px;width:auto;display:block;}
@@ -40,14 +45,17 @@
   .cover h1 .accent{color:var(--yellow);display:block;}
   .cover .sub{font-size:20px;color:#c3c7d0;max-width:30ch;line-height:1.45;margin:0;}
   .cover .cfoot{display:flex;justify-content:space-between;border-top:1px solid #2a2f3b;margin-top:64px;padding-top:18px;font-size:12.5px;font-weight:600;color:#8b909b;}
+
   /* WHAT YOU'LL LEARN */
-  h2.big{font-size:46px;margin:0 0 26px;}
+  .learn{display:flex;flex-direction:column;}
+  .bleedimg{flex:1;min-height:160px;margin:26px -64px -78px;border-top:1.5px dashed #c2c6cd;background:var(--gray-50);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:var(--gray-400);font-size:13px;font-weight:500;gap:8px;padding:18px;}
   .learn .row{display:flex;gap:18px;align-items:flex-start;margin-bottom:18px;}
   .learn .n{flex:none;width:34px;height:34px;border-radius:9px;background:var(--ink);color:var(--yellow);font-family:var(--display);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;}
   .learn .row p{margin:4px 0 0;font-size:17px;}
   .learn .rh{font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:1px;}
-  /* LANDSCAPE */
-  .lede{font-size:17px;color:var(--gray-600);max-width:70ch;margin:0 0 26px;line-height:1.5;}
+
+  /* OBSERVATIONS — Option A (compact, headline-led) */
+  .lede{font-size:17px;color:var(--gray-600);max-width:70ch;margin:0 0 22px;line-height:1.5;}
   .ob-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 30px;}
   .ob{border-top:3px solid var(--yellow);padding-top:12px;}
   .ob h4{font-size:18px;margin:0 0 7px;line-height:1.2;}
@@ -55,34 +63,53 @@
   .ob .s .v{font-family:var(--display);font-weight:800;font-size:19px;color:var(--yellow-600);margin-right:7px;}
   .ob p{font-size:13.5px;color:var(--gray-600);margin:0 0 7px;line-height:1.42;}
   .ob .src{font-style:italic;font-size:11.5px;color:var(--gray-400);}
-  /* ALT magazine observation layout */
-  .altnote{display:inline-block;background:#fff3a8;border:2px solid var(--ink);border-radius:8px;font-size:11px;font-weight:700;padding:5px 11px;margin-bottom:18px;text-transform:uppercase;letter-spacing:.06em;}
-  .mag{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:24px 0;border-top:1px solid var(--gray-200);}
+
+  /* OBSERVATIONS — Option B (magazine) */
+  .mag{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:16px 0;border-top:1px solid var(--gray-200);}
   .mag:first-of-type{border-top:none;}
-  .mag .visual{min-height:190px;border:1.5px dashed #c2c6cd;border-radius:14px;background:var(--gray-50);display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:12px;font-weight:500;text-align:center;padding:14px;}
-  .mag .txt .chip{display:inline-flex;align-items:baseline;gap:7px;background:var(--gray-50);border-left:4px solid var(--yellow);padding:6px 12px;border-radius:6px;margin-bottom:10px;font-size:12px;color:var(--gray-500);font-weight:600;}
-  .mag .txt .chip .v{font-family:var(--display);font-weight:800;font-size:20px;color:var(--yellow-600);}
-  .mag .txt h3{font-size:21px;margin:0 0 8px;line-height:1.15;}
-  .mag .txt p{font-size:14.5px;color:var(--gray-600);line-height:1.5;margin:0 0 8px;}
+  .mag .visual{min-height:138px;border:1.5px dashed #c2c6cd;border-radius:14px;background:var(--gray-50);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--gray-400);font-size:12px;font-weight:500;text-align:center;padding:16px;}
+  .mag .txt .chip{display:inline-flex;align-items:baseline;gap:8px;background:var(--ink);border-left:4px solid var(--yellow);padding:7px 14px 7px 12px;border-radius:8px;margin-bottom:10px;font-size:12px;color:#fff;font-weight:600;}
+  .mag .txt .chip .v{font-family:var(--display);font-weight:800;font-size:20px;color:var(--yellow);}
+  .mag .txt h3{font-size:20px;margin:0 0 6px;line-height:1.15;}
+  .mag .txt p{font-size:13.5px;color:var(--gray-600);line-height:1.45;margin:0 0 7px;}
   .mag .txt .src{font-style:italic;font-size:11.5px;color:var(--gray-400);}
-  .mag.flip .visual{order:2;}
-  @media(max-width:680px){.mag{grid-template-columns:1fr;}.mag.flip .visual{order:0;}}
+  .mag.flip>*:first-child{order:2;}
+  /* CHART (real content, no dashed placeholder) */
+  .chartbox{background:var(--gray-50);border-radius:14px;padding:18px 16px;}
+  .barchart{width:100%;}
+  .barrow{margin-bottom:16px;}
+  .barrow .lbl{display:block;font-size:12px;font-weight:700;color:var(--gray-600);margin-bottom:6px;}
+  .barrow .bar{height:36px;min-width:64px;border:2.5px solid var(--ink);border-radius:9px;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;font-family:var(--display);font-weight:800;font-size:17px;box-shadow:var(--shadow-sm);}
+  .barrow .bar.y{background:var(--yellow);color:var(--ink);}
+  .barrow .bar.k{background:rgba(255,217,0,.42);color:var(--ink);}
+  .barchart .cap{font-size:11px;color:var(--gray-500);font-style:italic;margin-top:6px;text-align:center;}
+
+  /* STATEMENT page (full-bleed) */
+  .statement{background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:flex-start;padding:64px;}
+  .statement .eyebrow{color:var(--yellow);}
+  .statement .big-line{font-family:var(--display);font-weight:800;font-size:56px;line-height:1.1;letter-spacing:-.02em;max-width:18ch;margin:0;}
+  .statement .big-line .hl{color:var(--yellow);}
+  .statement .blob{position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:rgba(255,217,0,.12);}
+
   /* MYTH TABLE */
   .mtable{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow);overflow:hidden;}
   .mtable .thead,.mtable .trow{display:grid;grid-template-columns:1fr 0.85fr 1.25fr;}
-  .mtable .thead{background:var(--ink);color:#fff;font-family:var(--display);font-weight:800;font-size:15px;}
-  .mtable .thead>div{padding:16px 18px;}
-  .mtable .thead .c1{color:var(--red);} .mtable .thead .c3{color:#34D399;}
-  .mtable .trow{border-top:1.5px solid var(--gray-200);}
-  .mtable .trow>div{padding:15px 18px;font-size:14px;line-height:1.4;}
-  .mtable .myth{font-weight:700;} .mtable .tac{color:var(--blue);}
+  .mtable .thead{background:var(--ink);color:#fff;font-family:var(--display);font-weight:800;font-size:14px;}
+  .mtable .thead>div{padding:13px 16px;}
+  .mtable .trow{border-top:1px solid var(--gray-200);}
+  .mtable .trow:nth-child(odd){background:var(--gray-50);}
+  .mtable .trow>div{padding:12px 16px;font-size:13.5px;line-height:1.42;}
+  .mtable .myth{font-weight:700;color:var(--ink);}
+  .mtable .myth::before{content:"\2717";color:var(--red);font-weight:800;margin-right:8px;}
+  .mtable .tac{color:var(--gray-500);}
+  .mtable .trow>div:last-child::before{content:"\2713";color:var(--green);font-weight:800;margin-right:8px;}
+
   /* PRINCIPLE CARDS */
   .pcard{background:#fff;border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow);padding:20px 24px;margin-bottom:16px;display:flex;gap:22px;align-items:flex-start;}
-  .pcard .on{font-family:var(--display);font-weight:800;font-size:32px;color:#fff;-webkit-text-stroke:2px var(--yellow);min-width:54px;line-height:1;}
+  .pcard .on{flex:none;font-family:var(--display);font-weight:800;font-size:34px;color:var(--yellow);min-width:48px;line-height:1;}
   .pcard h3{font-size:19px;margin:0 0 5px;}
   .pcard p{margin:0;font-size:15px;color:var(--gray-600);line-height:1.5;}
-  /* CALLOUTS */
-  .callout{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow-sm);padding:20px 24px;margin:18px 0 16px;}
+  .callout{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow-sm);padding:18px 22px;margin:16px 0 0;}
   .callout .ct{font-family:var(--display);font-weight:800;font-size:17px;margin:0 0 8px;display:flex;align-items:center;gap:10px;}
   .callout p{margin:0;font-size:14.5px;line-height:1.5;}
   .callout.usecase{background:#fffdf0;}
@@ -90,15 +117,18 @@
   .callout.reality .ct{color:var(--yellow);}
   .tag{font-family:var(--body);font-weight:700;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:9999px;border:2px solid var(--ink);}
   .tag.y{background:var(--yellow);} .tag.i{background:#fff;color:var(--ink);}
+  /* PULL QUOTE */
+  .pullquote{font-family:var(--display);font-weight:800;font-size:32px;line-height:1.18;letter-spacing:-.02em;border-top:3px solid var(--yellow);border-bottom:3px solid var(--yellow);padding:24px 0;margin:6px 0 0;}
+  .pullquote .hl{color:var(--yellow-600);}
+
   /* PROOF */
   .proof{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
   .brandcard{background:#fff;border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow);padding:24px;}
-  .brandcard h3{font-size:26px;margin:0 0 4px;}
   .brandcard .logoslot{height:48px;border:1.5px dashed #c2c6cd;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;}
+  .brandcard h3{font-size:26px;margin:0 0 4px;}
   .brandcard .sub{font-family:var(--body);font-weight:700;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin:0 0 12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .brandcard p{margin:0;font-size:14.5px;color:#22272f;line-height:1.5;}
-  .brandcard.tbd{border-style:dashed;box-shadow:none;background:var(--gray-50);}
-  .brandcard.tbd h3{font-size:20px;}
+
   /* SELF ASSESSMENT */
   .qhrow,.qrow{display:grid;grid-template-columns:1fr 74px 74px;gap:14px;align-items:center;}
   .qhrow{margin-bottom:4px;}
@@ -111,11 +141,13 @@
   .qrow .tick.y{background:#FFF3A8;}
   .qrow .tick.n{background:#fff;}
   .tiers{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:26px;}
-  .tier{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow-sm);padding:18px;font-size:13.5px;color:var(--gray-600);line-height:1.45;}
+  .tier{border:2.5px solid var(--ink);border-radius:var(--r-card);box-shadow:var(--shadow-sm);padding:18px;font-size:13.5px;color:#3a3206;line-height:1.45;}
   .tier .h{font-family:var(--display);font-weight:800;font-size:26px;color:var(--ink);margin-bottom:2px;}
-  .tier .k{font-family:var(--body);font-weight:700;font-size:14px;margin-bottom:8px;}
-  .tier.lag .k{color:var(--red);} .tier.bld .k{color:var(--yellow-600);}
-  .tier.led{background:var(--yellow);color:#3a3206;} .tier.led .k{color:#7a5b00;}
+  .tier .k{font-family:var(--body);font-weight:700;font-size:14px;margin-bottom:8px;color:var(--ink);}
+  .tier.lag{background:rgba(255,217,0,.16);}
+  .tier.bld{background:rgba(255,217,0,.45);}
+  .tier.led{background:rgba(255,217,0,1);}
+
   /* NEXT STEPS */
   .steps .row{display:flex;gap:16px;align-items:flex-start;padding:12px 0;}
   .steps .ck{flex:none;width:26px;height:26px;}
@@ -124,22 +156,22 @@
   .ctaband{position:relative;background:var(--ink);color:#fff;border-radius:var(--r-card);padding:44px 44px 46px;margin-top:30px;overflow:hidden;}
   .ctaband .blob{position:absolute;right:-40px;bottom:-60px;width:230px;height:230px;border-radius:50%;background:rgba(255,217,0,.14);}
   .ctaband h2{font-size:38px;margin:0 0 26px;max-width:18ch;position:relative;}
-  .ctaband .btn{position:relative;display:inline-block;background:var(--yellow);color:var(--ink);font-family:var(--display);font-weight:800;font-size:18px;padding:15px 30px;border-radius:var(--r-btn);text-decoration:none;margin-right:24px;}
-  .ctaband .link{position:relative;font-weight:700;font-size:15px;color:var(--yellow);text-decoration:underline;}
+  .ctaband .btn{position:relative;display:inline-block;background:var(--yellow);color:var(--ink);font-family:var(--display);font-weight:800;font-size:18px;padding:15px 30px;border-radius:var(--r-btn);text-decoration:none;}
+
   /* SOURCES */
   .srcrow{display:flex;gap:18px;align-items:baseline;padding:13px 0;border-top:1px solid var(--gray-200);font-size:15.5px;}
   .srcrow:first-of-type{border-top:none;}
-  .srcrow .n{font-family:var(--display);font-weight:800;color:var(--yellow-600);min-width:22px;}
-  .srcrow i{color:var(--gray-600);}
-  .srcrow a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--yellow-600);text-underline-offset:2px;}
+  .srcrow .n{font-family:var(--display);font-weight:800;color:var(--orange);min-width:22px;}
+  .srcrow i{color:var(--gray-600);font-style:italic;}
+  .srcrow a{color:var(--ink);text-decoration:none;}
   .srcrow a:hover{color:var(--orange);}
-  @media(max-width:680px){.page{padding:40px 26px 70px;}.foot{left:26px;right:26px;}.proof,.tiers,.mtable .thead,.mtable .trow,.ob-grid{grid-template-columns:1fr;}.cover h1{font-size:48px;}}
+  @media(max-width:680px){.page{padding:40px 26px 70px;min-height:auto;}.foot{left:26px;right:26px;}.proof,.tiers,.mtable .thead,.mtable .trow,.ob-grid,.mag{grid-template-columns:1fr;}.cover h1,.ctaband h2{font-size:46px;}.statement .big-line{font-size:38px;}}
 </style>
 </head>
 <body>
 <div class="doc">
 
-  <!-- COVER -->
+  <!-- COVER (original split) -->
   <section class="page cover">
     <div class="top">
       <div class="logo"><img src="logo%20dark.png" alt="Gameball"></div>
@@ -165,35 +197,16 @@
     <div class="row"><span class="n">3</span><div><div class="rh">Best practices</div><p>The principles behind loyalty programs that actually <b>lift repeat purchase</b>.</p></div></div>
     <div class="row"><span class="n">4</span><div><div class="rh">Proof</div><p>How leading brands turn <b>engagement into retention</b>.</p></div></div>
     <div class="row"><span class="n">5</span><div><div class="rh">Action</div><p>A quick <b>self-assessment</b> to benchmark your own program in 2 minutes.</p></div></div>
-    <div class="ph" style="min-height:210px;margin-top:26px;">
+    <div class="bleedimg">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#9aa0aa" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-      Drop a supporting illustration (store, app, or product)
+      Full-bleed image, fills the rest of the page (store, app, or product)
     </div>
     <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>02</span></div>
   </section>
 
-  <!-- FASHION MARKET OBSERVATIONS -->
+  <!-- OBSERVATIONS (magazine) page 1 -->
   <section class="page">
-    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context</span><h2>Fashion market observations</h2></div></div>
-    <p class="lede">Eight market observations on how shoppers now choose, switch, and stay, each backed by recent independent data. Price has overtaken familiarity, and loyalty built on habit alone no longer holds.</p>
-    <div class="ob-grid">
-      <div class="ob"><h4>Shoppers are choosing cheaper options</h4><div class="s"><span class="v">64%</span>chose a cheaper option</div><p>Clothes are easy to cut back on, so when money is tight they go first. Price now matters more than brand habit.</p><span class="src">McKinsey × BoF, State of Fashion</span></div>
-      <div class="ob"><h4>Dupe culture has gone mainstream</h4><div class="s"><span class="v">67%</span>buy dupes to save money</div><p>A near-identical product at a fraction of the price is now the goal, not a compromise.</p><span class="src">Morning Consult, 2025</span></div>
-      <div class="ob"><h4>Loyalty fades fastest among the young</h4><div class="s"><span class="v">29%</span>of Gen Z's wardrobe is one brand</div><p>Versus 52% for over-50s, and half of Gen Z prefer to explore new brands. Your name alone will not keep them.</p><span class="src">McKinsey × BoF, State of Fashion</span></div>
-      <div class="ob"><h4>Values matter, but skepticism is high</h4><div class="s"><span class="v">57%</span>distrust most "green" claims</div><p>Only about a third will pay more for sustainable products. Proof beats slogans.</p><span class="src">Deloitte, The Sustainable Consumer</span></div>
-      <div class="ob"><h4>Traditional marketing is losing its grip</h4><div class="s"><span class="v">2.4×</span>more authentic: real-customer vs brand content</div><p>Shoppers trust real customers and word of mouth more than brand or influencer ads.</p><span class="src">SoPost; Edelman Trust Barometer</span></div>
-      <div class="ob"><h4>Resale is reshaping the category</h4><div class="s"><span class="v">$393B</span>global secondhand apparel market</div><p>About 10% of all apparel spend and growing fast among younger shoppers. Loyalty now competes with resale.</p><span class="src">ThredUp / GlobalData Resale Report</span></div>
-      <div class="ob"><h4>Returns quietly eat fashion's profits</h4><div class="s"><span class="v">20–40%</span>apparel return rate</div><p>Well above the ~16% retail average. Rewarding customers who keep what they buy protects margin and carbon.</p><span class="src">NRF, Retail Returns Landscape</span></div>
-      <div class="ob"><h4>Shoppers now expect personalization</h4><div class="s"><span class="v">71%</span>expect personalized experiences</div><p>And 76% are frustrated without them. Personalization also lifts repeat purchase.</p><span class="src">McKinsey, Next in Personalization</span></div>
-    </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03</span></div>
-  </section>
-
-  <!-- ALT LAYOUT A (magazine, observations 1-4) — kept for reference -->
-  <section class="page">
-    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context · alternative layout</span><h2>Fashion market observations</h2></div></div>
-    <span class="altnote">Magazine layout (option B) · kept for reference</span>
-    <div class="mag">
+    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context</span><h2>Fashion market observations</h2></div></div>    <div class="mag">
       <div class="visual">[ Visual: shopper comparing prices / a sale rack ]</div>
       <div class="txt"><div class="chip"><span class="v">64%</span> chose a cheaper option</div><h3>Shoppers are choosing cheaper options</h3><p>Clothes are an easy thing to cut back on, so when money is tight they are one of the first to go. Price now matters more than brand habit, so loyalty has to give people a real reason to stay.</p><span class="src">McKinsey × BoF, State of Fashion</span></div>
     </div>
@@ -202,43 +215,50 @@
       <div class="txt"><div class="chip"><span class="v">67%</span> buy dupes to save money</div><h3>Dupe culture has gone mainstream</h3><p>More and more shoppers see a near-identical product at a much lower price not as settling, but as a smart win. The brand name, and sometimes even the quality, matter less than the price.</p><span class="src">Morning Consult, 2025</span></div>
     </div>
     <div class="mag">
-      <div class="visual">[ Visual: Gen Z shopper browsing many brands ]</div>
+      <div class="chartbox"><div class="barchart"><div class="barrow"><span class="lbl">Gen Z</span><span class="bar y" style="width:56%">29%</span></div><div class="barrow"><span class="lbl">Over 50s</span><span class="bar k" style="width:100%">52%</span></div><div class="cap">Share of wardrobe from one brand</div></div></div>
       <div class="txt"><div class="chip"><span class="v">29%</span> of Gen Z's wardrobe is one brand</div><h3>Loyalty fades fastest among the young</h3><p>Young shoppers are the future of fashion, but they are the least loyal to any single brand. Your name alone will not win them. You have to keep giving them reasons to come back.</p><span class="src">McKinsey × BoF, State of Fashion</span></div>
     </div>
     <div class="mag flip">
       <div class="visual">[ Visual: a sustainability label or proof point ]</div>
       <div class="txt"><div class="chip"><span class="v">57%</span> distrust most "green" claims</div><h3>Values matter, but skepticism is high</h3><p>Shoppers increasingly pick brands that share their values, but they have learned to doubt marketing claims. So show proof, do not just make claims.</p><span class="src">Deloitte, The Sustainable Consumer</span></div>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03 · alt</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03</span></div>
   </section>
 
-  <!-- ALT LAYOUT B (magazine, observations 5-8) — kept for reference -->
+  <!-- OBSERVATIONS (magazine) page 2 -->
   <section class="page">
-    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context · alternative layout</span><h2>Fashion market observations</h2></div></div>
-    <span class="altnote">Magazine layout (option B) · continued</span>
-    <div class="mag">
+    <div class="sec-head"><div class="numtile">01</div><div><span class="eyebrow">Context · continued</span><h2>Fashion market observations</h2></div></div>    <div class="mag">
       <div class="visual">[ Visual: real-customer content / phone with reviews ]</div>
       <div class="txt"><div class="chip"><span class="v">2.4×</span> more authentic: real-customer vs brand content</div><h3>Traditional marketing is losing its grip</h3><p>Polished influencer campaigns work less well than they used to. What moves people now is real customers, communities, and word of mouth.</p><span class="src">SoPost; Edelman Trust Barometer</span></div>
     </div>
     <div class="mag flip">
-      <div class="visual">[ Visual: a resale / secondhand rail ]</div>
-      <div class="txt"><div class="chip"><span class="v">$393B</span> global secondhand apparel market</div><h3>Resale is reshaping the category</h3><p>Every resale purchase is a sale the brand missed, but it is also a sign that people value brands worth buying and reselling. Loyalty now competes with resale, and smart brands work with it rather than against it.</p><span class="src">ThredUp / GlobalData Resale Report</span></div>
+      <div class="chartbox"><div class="barchart"><div class="barrow"><span class="lbl">Apparel</span><span class="bar y" style="width:100%">20–40%</span></div><div class="barrow"><span class="lbl">Retail avg</span><span class="bar k" style="width:44%">~16%</span></div><div class="cap">Share of sales returned</div></div></div>
+      <div class="txt"><div class="chip"><span class="v">20–40%</span> apparel return rate</div><h3>Returns quietly eat fashion's profits</h3><p>Every return costs shipping, restocking, and often a lost sale. In fashion, a valuable customer is not just one who spends, but one who keeps what they buy. So loyalty should reward profitable behavior, not order value alone.</p><span class="src">NRF, Retail Returns Landscape</span></div>
     </div>
     <div class="mag">
-      <div class="visual">[ Visual: a pile of returns / parcels ]</div>
-      <div class="txt"><div class="chip"><span class="v">20–40%</span> apparel return rate</div><h3>Returns quietly eat fashion's profits</h3><p>Every return costs shipping, restocking, and often a lost sale. In fashion, a valuable customer is not just one who spends, but one who keeps what they buy. So loyalty should reward profitable behavior, not order value alone.</p><span class="src">NRF, Retail Returns Landscape</span></div>
+      <div class="visual">[ Visual: a resale / secondhand rail ]</div>
+      <div class="txt"><div class="chip"><span class="v">$393B</span> global secondhand apparel market</div><h3>Resale is reshaping the category</h3><p>Every resale purchase is a sale the brand missed, but it is also a sign that people value brands worth buying and reselling. Loyalty now competes with resale, and smart brands work with it rather than against it.</p><span class="src">ThredUp / GlobalData Resale Report</span></div>
     </div>
     <div class="mag flip">
       <div class="visual">[ Visual: personalized recommendations on screen ]</div>
       <div class="txt"><div class="chip"><span class="v">71%</span> expect personalized experiences</div><h3>Shoppers now expect personalization</h3><p>Generic, one-size-fits-all marketing increasingly underperforms. Shoppers reward brands that recognize them and tailor the experience, which is exactly what a loyalty program's first-party data makes possible.</p><span class="src">McKinsey, Next in Personalization</span></div>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>03 · alt</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>04</span></div>
   </section>
 
-  <!-- WHERE LOYALTY GOES WRONG (+ reality check) -->
+  <!-- STATEMENT (full-bleed) -->
+  <section class="page statement">
+    <div class="blob"></div>
+    <div>
+      <span class="eyebrow">The shift</span>
+      <p class="big-line">In fashion, the cheaper option is one tap away. The only lasting advantage left is the <span class="hl">relationship</span>.</p>
+    </div>
+  </section>
+
+  <!-- WHERE LOYALTY GOES WRONG -->
   <section class="page">
     <div class="sec-head"><div class="numtile">02</div><div><span class="eyebrow">Problem</span><h2>Where loyalty goes wrong</h2></div></div>
-    <p style="color:var(--gray-600);margin:0 0 22px;">The myths fashion teams still believe, the tactics they produce, and the reality.</p>
+    <p style="color:var(--gray-600);margin:6px 0 22px;">The myths fashion teams still believe, the tactics they produce, and the reality.</p>
     <div class="mtable">
       <div class="thead"><div class="c1">The myth</div><div>The tactic it produces</div><div class="c3">The reality</div></div>
       <div class="trow"><div class="myth">"A loyalty program means points."</div><div class="tac">Points-only schemes</div><div>Points reward spending you already had. Without engagement, status, or community, they rarely change behavior.</div></div>
@@ -253,12 +273,13 @@
       <div class="ct"><span class="tag i">Reality check</span> Loyalty is a multiplier, not a cure</div>
       <p>A loyalty program rewards and compounds a good experience. It can't rescue a weak product, slow shipping, or poor service. Loyalty is one piece of a full ecosystem (product, service, post-purchase support, brand). Fix those basics first, and loyalty makes good customers come back more often.</p>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>04</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>05</span></div>
   </section>
 
   <!-- WHAT TO DO INSTEAD -->
   <section class="page">
     <div class="sec-head"><div class="numtile">03</div><div><span class="eyebrow">Best practices</span><h2>What to do instead</h2></div></div>
+    <div class="opener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9aa0aa" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> Section opener image</div>
     <p style="color:var(--gray-600);margin:0 0 22px;">The moves that turn one-time buyers into repeat customers. Use them as a checklist for your loyalty program.</p>
     <div class="pcard"><span class="on">01</span><div><h3>Reward engagement, not just spend</h3><p>Recognize the behaviors that build a relationship (reviews, referrals, content, repeat visits), not only transactions.</p></div></div>
     <div class="pcard"><span class="on">02</span><div><h3>Make status and progress feel earned</h3><p>Tiers, milestones, and challenges give shoppers a reason to return between purchases, which matters most in a seasonal category.</p></div></div>
@@ -266,29 +287,30 @@
     <div class="pcard"><span class="on">04</span><div><h3>Build owned relationships, reduce reliance on borrowed reach</h3><p>Turn customers into your channel through referrals, community, and first-party data.</p></div></div>
     <div class="pcard"><span class="on">05</span><div><h3>Be channel-agnostic by design</h3><p>One identity, one balance, one experience across web, app, and store, whatever platform you run on.</p></div></div>
     <div class="pcard"><span class="on">06</span><div><h3>Reward profitable loyalty, not just spend</h3><p>In a high-return category, recognize the customers who buy and keep, not only those who spend.</p></div></div>
-
-    <div class="callout usecase">
-      <div class="ct"><span class="tag y">Fashion use case</span> Turn returns into a loyalty lever</div>
+    <div class="callout reality">
+      <div class="ct"><span class="tag i">Fashion use case</span> Turn returns into a loyalty lever</div>
       <p>High return rates are one of the biggest drains on fashion margins, on top of the carbon footprint brands are trying to reduce. So make returns part of the loyalty story: reward the customers who keep what they buy, the high spenders with low return rates, not just the biggest spenders. You protect margin and support sustainability goals, not just repeat revenue.</p>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>05</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>06</span></div>
   </section>
 
   <!-- SUCCESS STORIES -->
   <section class="page">
     <div class="sec-head"><div class="numtile">04</div><div><span class="eyebrow">Proof</span><h2>Success stories</h2></div></div>
+    <div class="opener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9aa0aa" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> Section opener image</div>
     <div class="proof">
       <div class="brandcard"><div class="logoslot">Nike logo</div><h3>Nike</h3><p class="sub">Membership + gamification</p><p>Membership and app-based gamification (Nike Run Club, SNKRS) deepen engagement and push sales toward Nike's own direct channels, which sit around 40% of total revenue. Built in-house, not on a third-party platform.</p></div>
       <div class="brandcard"><div class="logoslot">adidas logo</div><h3>adidas adiClub</h3><p class="sub">Four engagement tiers</p><p>Members earn by logging workouts, writing reviews, and attending events, not just by buying. Bond's 2024 Loyalty Report named it the top apparel program, and found loyalty members about 4x more likely to spend more and 2x more likely to advocate.</p></div>
       <div class="brandcard"><div class="logoslot">The North Face logo</div><h3>The North Face</h3><p class="sub">Access, not discounts</p><p>Points and tiers paired with early access to drops, exclusive events, and an extended-returns perk. Loyalty built on experience, not markdowns.</p></div>
       <div class="brandcard"><div class="logoslot">Gymshark logo</div><h3>Gymshark</h3><p class="sub">Community over discounts</p><p>Built a billion-dollar brand on community, not markdowns. Its 66-day fitness challenge turns customers into a movement, and its program rewards workouts and engagement, not just spend.</p></div>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>06</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>07</span></div>
   </section>
 
   <!-- SELF-ASSESSMENT -->
   <section class="page">
     <div class="sec-head"><div class="numtile">05</div><div><span class="eyebrow">Action</span><h2>Quick self-assessment</h2></div></div>
+    <div class="opener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9aa0aa" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> Section opener image</div>
     <p style="color:var(--gray-600);margin:0 0 6px;">How mature is your fashion loyalty program?</p>
     <p style="color:var(--gray-500);margin:0 0 18px;font-size:14px;">Tick one box per row. <b>Yes = 1 point, No = 0.</b></p>
     <div class="qhrow"><div></div><div class="yh">Yes&nbsp;&nbsp;+1</div><div class="nh">No&nbsp;&nbsp;+0</div></div>
@@ -303,12 +325,13 @@
       <div class="tier bld"><div class="h">3–4</div><div class="k">Building</div>Solid foundations, with clear room to grow. Your "no" answers show where to focus next.</div>
       <div class="tier led"><div class="h">5–6</div><div class="k">Leading</div>A mature, compounding loyalty approach. Focus on optimization, community, and proving ROI.</div>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>07</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>08</span></div>
   </section>
 
   <!-- NEXT STEPS -->
   <section class="page steps">
     <div class="sec-head"><div class="numtile">06</div><div><span class="eyebrow">Recommendations</span><h2>Your next steps</h2></div></div>
+    <div class="opener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9aa0aa" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg> Section opener image</div>
     <div class="row"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><p>Keep customers by building a <b>real relationship</b> with them, not by being the cheapest. Anyone can copy a discount, so price alone won't keep them loyal.</p></div>
     <div class="row"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><p><b>Reward more than spending.</b> Give customers perks and status for engaging, not just for buying.</p></div>
     <div class="row"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><p><b>Win younger shoppers</b> with shared values, community, and evidence that backs up your claims, not just marketing slogans.</p></div>
@@ -316,10 +339,10 @@
     <div class="row"><svg class="ck" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><p><b>Give customers the same loyalty experience everywhere</b> they shop: online, in-app, and in-store.</p></div>
     <div class="ctaband">
       <div class="blob"></div>
-      <h2>See how Gameball helps fashion brands turn shoppers into repeat fans</h2>
+      <h2>See how Gameball can turn your one-time shoppers into repeat fans</h2>
       <a class="btn" href="https://www.gameball.co">Book a demo with a Retention &amp; Loyalty expert</a>
     </div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>08</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>09</span></div>
   </section>
 
   <!-- SOURCES -->
@@ -335,7 +358,7 @@
     <div class="srcrow"><span class="n">7</span><span>SoPost · <a href="https://sopost.com/blog/user-generated-content-the-new-measure-of-authenticity/" target="_blank" rel="noopener"><i>User-Generated Content: the new measure of authenticity</i></a></span></div>
     <div class="srcrow"><span class="n">8</span><span>National Retail Federation · <a href="https://nrf.com/research/2025-retail-returns-landscape" target="_blank" rel="noopener"><i>Retail Returns Landscape</i></a></span></div>
     <div class="srcrow"><span class="n">9</span><span>McKinsey · <a href="https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-value-of-getting-personalization-right-or-wrong-is-multiplying" target="_blank" rel="noopener"><i>Next in Personalization</i></a></span></div>
-    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>09</span></div>
+    <div class="foot"><span>From deal hunters to dedicated fans | An industry loyalty guide by <img class="footlogo" src="logo%20dark.png" alt="Gameball"></span><span>10</span></div>
   </section>
 
 </div>
